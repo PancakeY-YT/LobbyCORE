@@ -1,6 +1,6 @@
 <?php
 
-namespace DustyMC;
+namespace zFlexioSky;
 
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 use pocketmine\item\Item;
@@ -45,7 +45,7 @@ class Lobbys {
         $lobby2->setLore([
         	'',
         	'§r§7» §eStatus',
-        	'§r§7• §4Offline',
+        	'§r§7• §aOnline',
         	''
         ]);
         
@@ -126,8 +126,9 @@ class Lobbys {
 
             if($itemClickedOn->getCustomName() == TF::RESET . TF::BLUE . "Lobby-2"){
             
-              $player->sendMessage(TF::DARK_RED."Kommt Bald...");
-
+              $player->sendMessage(TF::GREEN."Du wirst nun zu Lobby-2 transferiert!");
+              $player->transfer("145.239.47.187", "19133");
+              
             }
 
             if($itemClickedOn->getCustomName() == TF::RESET . TF::BLUE . "Lobby-3"){
