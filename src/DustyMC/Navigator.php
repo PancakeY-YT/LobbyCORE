@@ -1,6 +1,6 @@
 <?php
 
-namespace zFlexioSky;
+namespace DustyMC;
 
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 use pocketmine\item\Item;
