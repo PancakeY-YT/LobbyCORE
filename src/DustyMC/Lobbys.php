@@ -40,7 +40,7 @@ class Lobbys {
         	''
         ]);
         
-        $lobby2 = Item::get(351, 1, 1);
+        $lobby2 = Item::get(351, 10, 1);
         $lobby2->setCustomName(TF::RESET . TF::BLUE . "Lobby-2");
         $lobby2->setLore([
         	'',
