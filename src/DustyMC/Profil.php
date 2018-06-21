@@ -91,7 +91,11 @@ class Profil {
             
             if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "Custom Server"){
             
-              $player->sendMessage(TF::DARK_RED."Du benötigst einen §6Premium§4 Rang für diese Funktion!"); 
+              $player->sendMessage(TF::GREEN."Erstelle Custom Server in der DatenBank..."); 
+              $player->sendMessage(TF::GREEN."Installiert Pocketmine..."); 
+              $player->sendMessage(TF::GREEN."Starte Custom Server");
+              $player->sendMessage(TF::GREEN."Teleportiere Spieler zum Server..."); 
+              $player->sendMessage(TF::DARK_RED."Fehler! Du benötigst einen Premium Rang,falls du ein hast und es nicht funktioniert melde es im Support!");              
               
             }
          
