@@ -102,13 +102,13 @@ class Navigator {
      $inv->setItem(17, $axe);
         
 	 $inv->setItem(18, $air);
-	 $inv->setItem(19, $air1);
+	 $inv->setItem(19, $soon);
 	 $inv->setItem(20, $air);
 	 $inv->setItem(21, $air1);
 	 $inv->setItem(22, $air);
 	 $inv->setItem(23, $air1);
 	 $inv->setItem(24, $air);
-	 $inv->setItem(25, $air1);
+	 $inv->setItem(25, $soon);
 	 $inv->setItem(26, $air);
 	 
 	 /*$inv->setItem(0, $air);
