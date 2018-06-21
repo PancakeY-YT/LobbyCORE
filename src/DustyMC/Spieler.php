@@ -13,6 +13,9 @@ class Spieler {
     public function __Construct(Main $plugin){
         $this->plugin = $plugin;
         
+        public function Spieler(Player $player)
+    {
+        
         } elseif ($item->getCustomName() == TextFormat::GREEN . "Spieler Sichtbar") {
             $player->getInventory()->remove(Item::get(Item::DYE, 10)->setCustomName(TextFormat::GREEN . "Spieler Sichtbar"));
             $player->getInventory()->addItem(Item::get(Item::DYE, 8)->setCustomName(TextFormat::GRAY . "Spieler unsichtbar"));
