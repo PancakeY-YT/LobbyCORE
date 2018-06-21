@@ -1,5 +1,5 @@
 name: LobbyCore
 main: DustyMC\Main
-api: [3.0.0]
+api: 3.0.0-A
 au thor: DustyMC
 version: 1.0.0
