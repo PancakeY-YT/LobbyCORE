@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener {
         	$player = $event->getPlayer();
         	$name = $player->getName();
         	$this->Main($player);
-        	$event->setJoinMessage("§7[§a+§7] §a" . $name);
+        	$event->setJoinMessage("§7[§9+§7] §a" . $name);
         	
     	}
     	
@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
     	
         	$player = $event->getPlayer();
         	$name = $player->getName();
-        	$event->setQuitMessage("§7[§4-§7] §4" . $name);
+        	$event->setQuitMessage("§7[§c-§7] §4" . $name);
         	
     	}
     	
@@ -49,6 +49,7 @@ class Main extends PluginBase implements Listener {
         	$player->getInventory()->setItem(4, Item::get(345)->setCustomName(TextFormat::YELLOW."Navigator"));
         	$player->getInventory()->setItem(8, Item::get(399)->setCustomName(TextFormat::GREEN."Lobbys"));
             $player->getInventory()->setItem(0, Item::get(397 , 3)->setCustomName(TextFormat::AQUA."Dein Profil"));
+            $player->getInventory()->setItem(1, Item::get(397 , 4)->setCustomName(TextFormat::RED."Spieler Sichtbar"));
 
        }
     	
@@ -67,8 +68,14 @@ class Main extends PluginBase implements Listener {
              		$menu->Lobbys($player);
              
                  }
+             
+             if($item->getCustomName() == TextFormat::RED . "Spieler Sichtbar") {
+                  $menu = new Spieler($this);
+             	    $menu->Spieler($player);
+             
+                 }
                  
-           if($item->getCustomName() == TextFormat::AQUA . "Dein Profil") {
+            if($item->getCustomName() == TextFormat::AQUA . "Dein Profil") {
                   $menu = new Profil($this);
              	    $menu->Profil($player);
              	    
