@@ -30,7 +30,7 @@ class Navigator {
         $menu = InvMenu::create(InvMenu::TYPE_CHEST);
         
         $menu->readonly();
-        $menu->setName("§9DustyMC §7- §aNavigator");
+        $menu->setName("§9Syntoxien §7- §aNavigator");
         
         $spawn = Item::get(378, 0, 1);
         $spawn->setCustomName(TF::RESET . TF::YELLOW . "Spawn");
@@ -58,17 +58,8 @@ class Navigator {
         	 ''
          ]);        
         
-        $mc= Item::get(256, 0, 1);
-        $mc->setCustomName(TF::RESET . TF::YELLOW . "MoleCraft");
-        
-        $qsg = Item::get(307, 0, 1);
-        $qsg->setCustomName(TF::RESET . TF::YELLOW . "QuickSurvivalGames");
-        
-        $lbb = Item::get(19, 0, 1);
-        $lbb->setCustomName(TF::RESET . TF::YELLOW . "LuckyBlocksBattle");
-        
         $axe = Item::get(258, 0, 1);
-        $axe->setCustomName(TF::RESET . TF::YELLOW . "Citybuild");
+        $axe->setCustomName(TF::RESET . TF:: YELLOW . "CityBuild");
         $axe->setLore([
         	 '',
         	 '§r§7» §eStatus',
@@ -90,34 +81,34 @@ class Navigator {
 
         $inv = $menu->getInventory();
         
-        $inv->setItem(0, $air);
+     $inv->setItem(0, $air);
 	 $inv->setItem(1, $sw);
 	 $inv->setItem(2, $air);
-	 $inv->setItem(3, $air);
+	 $inv->setItem(3, $air1);
 	 $inv->setItem(4, $air);
-	 $inv->setItem(5, $air);
+	 $inv->setItem(5, $air1);
 	 $inv->setItem(6, $air);
 	 $inv->setItem(7, $join);
 	 $inv->setItem(8, $air);
 	 
 	 $inv->setItem(9, $ffa);
-        $inv->setItem(10, $air);
-        $inv->setItem(11, $qsg);
-        $inv->setItem(12, $air);
-        $inv->setItem(13, $spawn);
-        $inv->setItem(14, $air);
-        $inv->setItem(15, $lbb);
-        $inv->setItem(16, $air);
-        $inv->setItem(17, $axe);
+     $inv->setItem(10, $air);
+     $inv->setItem(11, $air1);
+     $inv->setItem(12, $air);
+     $inv->setItem(13, $spawn);
+     $inv->setItem(14, $air);
+     $inv->setItem(15, $air1);
+     $inv->setItem(16, $air);
+     $inv->setItem(17, $axe);
         
 	 $inv->setItem(18, $air);
-	 $inv->setItem(19, $mc);
+	 $inv->setItem(19, $air1);
 	 $inv->setItem(20, $air);
-	 $inv->setItem(21, $air);
+	 $inv->setItem(21, $air1);
 	 $inv->setItem(22, $air);
-	 $inv->setItem(23, $air);
+	 $inv->setItem(23, $air1);
 	 $inv->setItem(24, $air);
-	 $inv->setItem(25, $soon);
+	 $inv->setItem(25, $air1);
 	 $inv->setItem(26, $air);
 	 
 	 /*$inv->setItem(0, $air);
@@ -186,13 +177,13 @@ class Navigator {
             
             if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "SkyWars"){
             
-            	$player->transfer("82.211.44.7", "1001");
+            	$player->transfer("82.211.44.7", "19132");
             	
             }
            
            if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "FFA"){
             
-            	$player->transfer("82.211.44.7", "2002"); 
+            	$player->transfer("82.211.44.7", "19132"); 
             
             }
                    

@@ -33,13 +33,13 @@ class Profil {
         $menu->setName(TF::GRAY . "» " . TF::GREEN . "Dein Profil" . TF::GRAY . " «");
 
         $language= Item::get(340, 0, 1);
-        $language->setCustomName(TF::RESET . TF::BLUE . "Language");
+        $language->setCustomName(TF::RESET . TF::GOLD . "Language");
         
         $pl = Item::get(372, 0, 1);
         $pl->setCustomName(TF::RESET . TF::GOLD . "Dein Profil");
         
         $cs = Item::get(137, 0, 1);
-        $cs->setCustomName(TF::RESET . TF::YELLOW . "Custom Server");
+        $cs->setCustomName(TF::RESET . TF::GOLD . "Custom Server");
         
         $air = Item::get(160, 0, 1);
        $air->setCustomName("");
