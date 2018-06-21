@@ -72,7 +72,7 @@ class Lobbys {
 	 $lobby5->setLore([
         	'',
         	'§r§7» §eStatus',
-        	'§r§7• §4Noch nicht Verfügbar',
+        	'§r§7• §5Nur für VIP Spieler',
         	''
         ]);
 
@@ -88,7 +88,7 @@ class Lobbys {
 	 $inv->setItem(1, $air1);
 	 $inv->setItem(2, $air);
 	 $inv->setItem(3, $air1);
-	 $inv->setItem(4, $lobby5);
+	 $inv->setItem(4, $air);
 	 $inv->setItem(5, $air1);
 	 $inv->setItem(6, $air);
 	 $inv->setItem(7, $air1);
@@ -99,12 +99,12 @@ class Lobbys {
         $inv->setItem(11, $air1);
         $inv->setItem(12, $lobby2);
         $inv->setItem(13, $air1);
-        $inv->setItem(14, $lobby3);
+        $inv->setItem(14, $lobby5);
         $inv->setItem(15, $air1);
-        $inv->setItem(16, $lobby4);
+        $inv->setItem(16, $lobby3);
         $inv->setItem(17, $air1);
         
-	 $inv->setItem(18, $air);
+	 $inv->setItem(18, $lobby4);
 	 $inv->setItem(19, $air1);
 	 $inv->setItem(20, $air);
 	 $inv->setItem(21, $air1);
