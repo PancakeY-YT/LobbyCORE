@@ -89,7 +89,7 @@ class Profil {
               
             }
             
-            if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "Custom Server"){
+            if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Custom Server"){
             
               $player->sendMessage(TF::GREEN."Erstelle Custom Server in der DatenBank..."); 
               $player->sendMessage(TF::GREEN."Installiert Pocketmine..."); 
