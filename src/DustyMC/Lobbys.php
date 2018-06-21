@@ -145,7 +145,7 @@ class Lobbys {
             
             if($itemClickedOn->getCustomName() == TF::RESET . TF::DARK_PURPLE . "VIP Lobby"){
             
-              $player->sendMessage(TF::DARK_RED."Du benötigst einen höheren Rang als pieler!"); 
+              $player->sendMessage(TF::DARK_RED."Du benötigst einen höheren Rang als Spieler!"); 
               
             }
          
