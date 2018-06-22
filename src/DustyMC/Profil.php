@@ -85,23 +85,19 @@ class Profil {
              
              if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Dein Profil"){
             
-              $player->sendMessage(TF::DARK_RED."Nicht nicht Verfügbar"); 
+              $player->sendMessage(TF::DARK_RED."Nocht nicht Verfügbar"); 
               
             }
             
             if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Custom Server"){
             
-              $player->sendMessage(TF::GREEN."Erstelle Custom Server in der DatenBank..."); 
-              $player->sendMessage(TF::GREEN."Installiert Pocketmine..."); 
-              $player->sendMessage(TF::GREEN."Starte Custom Server");
-              $player->sendMessage(TF::GREEN."Teleportiere Spieler zum Server..."); 
-              $player->sendMessage(TF::DARK_RED."Fehler! Du benötigst einen Premium Rang,falls du ein hast und es nicht funktioniert melde es im Support!");              
+              $player->sendMessage(TF::DARK_RED."Noch nicht Verfügbar"); 
               
             }
          
          if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Coins"){
             
-              $player->addTitle(TF::RED."Du hast §e1000 Coins!"); 
+              $player->addTitle(TF::RED."Du hast §e1000 §cCoins!"); 
               
             }
               

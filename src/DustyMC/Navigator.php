@@ -45,16 +45,16 @@ class Navigator {
         $sw->setLore([
         	 '',
         	 '§r§7» §eStatus',
-             '§r§7• §aOnline',
+             '§r§7• §4Offline',
         	 ''
          ]); 
         
         $ffa = Item::get(276, 0, 1);
-        $ffa->setCustomName(TF::RESET . TF::YELLOW . "FFA");
+        $ffa->setCustomName(TF::RESET . TF::YELLOW . "PvP");
         $ffa->setLore([
         	 '',
         	 '§r§7» §eStatus',
-             '§r§7• §aOnline',
+             '§r§7• §4Offline',
         	 ''
          ]);        
         
@@ -63,15 +63,15 @@ class Navigator {
         $axe->setLore([
         	 '',
         	 '§r§7» §eStatus',
-             '§r§7• §4In Arbeit',
+             '§r§7• §4Offline',
         	 ''
          ]);  
         
 	 $soon = Item::get(351, 1, 1);
         $soon->setCustomName(TF::RESET . TF::DARK_RED . "Coming Soon");
         
-       $join = Item::get(369, 0, 1);
-        $join->setCustomName(TF::RESET . TF::RED . "QuickJoin");
+       $chest = Item::get(54, 0, 1);
+        $chest->setCustomName(TF::RESET . TF::GREEN . "ChestOpening");
 	 
 	$air1 = Item::get(160, 0, 1);
        $air1->setCustomName("");
@@ -88,7 +88,7 @@ class Navigator {
 	 $inv->setItem(4, $air);
 	 $inv->setItem(5, $air1);
 	 $inv->setItem(6, $air);
-	 $inv->setItem(7, $join);
+	 $inv->setItem(7, $chest);
 	 $inv->setItem(8, $air);
 	 
 	 $inv->setItem(9, $ffa);
@@ -181,7 +181,7 @@ class Navigator {
             	
             }
            
-           if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "FFA"){
+           if($itemClickedOn->getCustomName() == TF::RESET . TF::YELLOW . "PvP"){
             
             	$player->transfer("82.211.44.7", "19132"); 
             

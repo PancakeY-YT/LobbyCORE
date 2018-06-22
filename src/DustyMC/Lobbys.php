@@ -45,7 +45,7 @@ class Lobbys {
         $lobby2->setLore([
         	'',
         	'§r§7» §eStatus',
-        	'§r§7• §aOnline',
+        	'§r§7• §4Offline',
         	''
         ]);
         
@@ -94,17 +94,17 @@ class Lobbys {
 	 $inv->setItem(7, $air1);
 	 $inv->setItem(8, $air);
 	 
-	    $inv->setItem(9, $lobby1);
-        $inv->setItem(10, $air1);
-        $inv->setItem(11, $lobby2);
-        $inv->setItem(12, $air1);
-        $inv->setItem(13, $lobby5);
-        $inv->setItem(14, $air1);
-        $inv->setItem(15, $lobby3);
-        $inv->setItem(16, $air1);
-        $inv->setItem(17, $lobby4);
+	 $inv->setItem(9, $air1);
+        $inv->setItem(10, $lobby1);
+        $inv->setItem(11, $air1);
+        $inv->setItem(12, $lobby2);
+        $inv->setItem(13, $air1);
+        $inv->setItem(14, $lobby5);
+        $inv->setItem(15, $air1);
+        $inv->setItem(16, $lobby3);
+        $inv->setItem(17, $air1);
         
-	 $inv->setItem(18, $air);
+	 $inv->setItem(18, $lobby4);
 	 $inv->setItem(19, $air1);
 	 $inv->setItem(20, $air);
 	 $inv->setItem(21, $air1);
@@ -126,7 +126,7 @@ class Lobbys {
 
             if($itemClickedOn->getCustomName() == TF::RESET . TF::BLUE . "Lobby-2"){
             
-              $player->sendMessage(TF::GREEN."Du wirst nun zu Lobby-2 transferiert!");
+              $player->addTitle(TF::GREEN."Du wirst nun zu Lobby-2 transferiert!");
               $player->transfer("145.239.47.187", "19133");
               
             }
