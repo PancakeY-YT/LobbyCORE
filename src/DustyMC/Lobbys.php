@@ -100,7 +100,7 @@ class Lobbys {
         $inv->setItem(12, $air);
         $inv->setItem(13, $lobby5);
         $inv->setItem(14, $air);
-        $inv->setItem(15, $lonny3);
+        $inv->setItem(15, $lobby3);
         $inv->setItem(16, $air);
         $inv->setItem(17, $lobby4);
         
