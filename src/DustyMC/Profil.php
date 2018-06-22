@@ -7,7 +7,7 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\TextFormat as Color;
-use pocketmine\lang\Baselang;
+use pocketmine\lang\BaseLang;
 
 use muqsit\invmenu\InvMenuHandler;
 use muqsit\invmenu\InvMenu;
@@ -19,7 +19,7 @@ class Profil {
 
     public function __Construct(Main $plugin){
         $this->plugin = $plugin;
-             
+         { 
         public function getLanguage(): BaseLang {
           return $this->baseLang;
          
