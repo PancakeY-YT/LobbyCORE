@@ -7,7 +7,6 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\TextFormat as Color;
-use pocketmine\lang\Baselang;
 
 use muqsit\invmenu\InvMenuHandler;
 use muqsit\invmenu\InvMenu;
