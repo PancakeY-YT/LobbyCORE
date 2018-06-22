@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener {
         	$player = $event->getPlayer();
         	$name = $player->getName();
         	$this->Main($player);
-        	$event->setJoinMessage("§7[§a+§7] §a" . $name);
+        	$event->setJoinMessage("§7[§9+§7] §9" . $name);
         	
     	}
     	
@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
     	
         	$player = $event->getPlayer();
         	$name = $player->getName();
-        	$event->setQuitMessage("§7[§4-§7] §4" . $name);
+        	$event->setQuitMessage("§7[§c-§7] §c" . $name);
         	
     	}
     	
