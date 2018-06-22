@@ -7,6 +7,7 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\TextFormat as Color;
+use pocketmine\lang\Baselang;
 
 use muqsit\invmenu\InvMenuHandler;
 use muqsit\invmenu\InvMenu;
@@ -18,6 +19,16 @@ class Profil {
 
     public function __Construct(Main $plugin){
         $this->plugin = $plugin;
+             
+        public function getLanguage(): BaseLang {
+          return $this->baseLang;
+         
+        $lang = $this->getConfig()->get("language", BaseLang::FALLBACK_LANGUAGE);
+        $this->baseLang = new BaseLang($lang, $this->getFile() . "resources/");
+
+        $this->getLogger()->info(self::PREFIX . "Language: " . $lang);
+        
+        }
         
         if (!InvMenuHandler::isRegistered()) {
             InvMenuHandler::register($plugin);
