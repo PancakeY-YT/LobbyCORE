@@ -127,10 +127,15 @@ class Lobbys {
             if($itemClickedOn->getCustomName() == TF::RESET . TF::BLUE . "Lobby-2"){
             
               $player->addTitle(TF::GREEN."Du wirst in 5 Sekunden zur §bLobby-2§a Teleportiert!");
+              
               $player->sendMessage(TF::GREEN."Du wirst in 4 Sekunden zur §bLobby-2§a Teleportiert!");
+              
               $player->sendMessage(TF::GREEN."Du wirst in 3 Sekunden zur §bLobby-2§a Teleportiert!");
+              
               $player->sendMessage(TF::GREEN."Du wirst in 2 Sekunden zur §bLobby-2§a Teleportiert!");
-              $player->sendMessage(TF::GREEN."Du wirst in 1 Sekunden zur §bLobby-2§a Teleportiert!");             
+              
+              $player->sendMessage(TF::GREEN."Du wirst in 1 Sekunden zur §bLobby-2§a Teleportiert!");  
+           
               $player->transfer("145.239.47.187", "19133");
               
             }
