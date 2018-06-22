@@ -7,6 +7,7 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\TextFormat as Color;
+use pocketmine\lang\Baselang;
 
 use muqsit\invmenu\InvMenuHandler;
 use muqsit\invmenu\InvMenu;
@@ -32,8 +33,8 @@ class Profil {
         $menu->readonly();
         $menu->setName(TF::GRAY . "» " . TF::GREEN . "Dein Profil" . TF::GRAY . " «");
 
-        $language= Item::get(340, 0, 1);
-        $language->setCustomName(TF::RESET . TF::GOLD . "Language");
+        $co= Item::get(266, 0, 1);
+        $co->setCustomName(TF::RESET . TF::GOLD . "Coins");
         
         $pl = Item::get(372, 0, 1);
         $pl->setCustomName(TF::RESET . TF::GOLD . "Dein Profil");
@@ -42,10 +43,10 @@ class Profil {
         $cs->setCustomName(TF::RESET . TF::GOLD . "Custom Server");
         
         $air = Item::get(160, 0, 1);
-       $air->setCustomName("");
+        $air->setCustomName("");
 	
-	$air1 = Item::get(160, 15, 1);
-       $air1->setCustomName("");
+	    $air1 = Item::get(160, 15, 1);
+        $air1->setCustomName("");
 
         $inv = $menu->getInventory();
         
@@ -65,7 +66,7 @@ class Profil {
      $inv->setItem(12, $air);
      $inv->setItem(13, $cs);
      $inv->setItem(14, $air);
-     $inv->setItem(15, $language);
+     $inv->setItem(15, $co);
      $inv->setItem(16, $air);
      $inv->setItem(17, $air1);
         
@@ -85,7 +86,7 @@ class Profil {
              
              if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Dein Profil"){
             
-              $player->sendMessage(TF::DARK_RED."Coming Soon"); 
+              $player->sendMessage(TF::DARK_RED."Nicht nicht Verfügbar"); 
               
             }
             
@@ -99,6 +100,12 @@ class Profil {
               
             }
          
+         if($itemClickedOn->getCustomName() == TF::RESET . TF::GOLD . "Coins"){
+            
+              $player->addTitle(TF::RED."Du hast §e1000 Coins!"); 
+              
+            }
+              
             return true;
         });
 
