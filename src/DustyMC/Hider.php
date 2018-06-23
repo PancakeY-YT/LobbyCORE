@@ -83,8 +83,7 @@ class Hider implements Listener {
             $exit = Item::get(351, 1, 1);
             $exit->setCustomName(c::RESET . c::RED . "Exit");
 
-            $inv->setItem(8, $exit);
-            
+            $inv->setItem(8, $exit);        
             }
             
             public function onClick(PlayerInteractEvent $event)
@@ -124,8 +123,7 @@ class Hider implements Listener {
                 unset($this->plugin->none[array_search($name, $this->plugin->none)]);
             }
             $this->plugin->none[] = $name;
-            $Hider->getItems($player);
-            
+            $Hider->getItems($player);  
             }
             
             public function onRun(int $currentTick)
