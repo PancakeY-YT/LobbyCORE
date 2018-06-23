@@ -22,7 +22,6 @@ class Hider implements Listener {
         $this->plugin->getScheduler()->scheduleRepeatingTask($this, 10);
     }
 
-
     public function getItems(Player $player)
      {
         if ($this->plugin instanceof PlayerHider) {
@@ -34,7 +33,6 @@ class Hider implements Listener {
             if (in_array($name, $this->plugin->vip)) {
                 $all = Item::get(351, 10, 1);
                 $all->setCustomName(c::RESET . c::GREEN . "Alle Spieler sichtbar");
-
 
                 $vip = Item::get(351, 5, 1);
                 $vip->setCustomName(c::RESET . c::DARK_PURPLE . "Nur VIPs sichtbar");
@@ -98,7 +96,6 @@ class Hider implements Listener {
 
         if ($in == c::RESET . c::GREEN . "Alle Spieler sichtbar") {
 
-
             if (in_array($name, $this->plugin->vip)) {
                 unset($this->plugin->vip[array_search($name, $this->plugin->vip)]);
             }
@@ -135,7 +132,6 @@ class Hider implements Listener {
     {
         if ($this->plugin instanceof PlayerHider) {
             foreach ($this->plugin->getServer()->getOnlinePlayers() as $player) {
-
 
                 $name = $player->getName();
                 $inv = $player->getInventory()->getItemInHand()->getCustomName();
