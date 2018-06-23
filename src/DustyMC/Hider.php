@@ -34,13 +34,16 @@ class Hider implements Listener {
             if (in_array($name, $this->plugin->vip)) {
                 $all = Item::get(351, 10, 1);
                 $all->setCustomName(c::RESET . c::GREEN . "Alle Spieler sichtbar");
+                
 
                 $vip = Item::get(351, 5, 1);
                 $vip->setCustomName(c::RESET . c::DARK_PURPLE . "Nur VIPs sichtbar");
-                $vip->addEnchantment(new EnchantmentInstance($estick, 1));
+                $vip->addEnchantment(new EnchantmentInstance($estick, 1));              
 
                 $item = Item::get(351, 8, 1);
                 $item->setCustomName(c::RESET . c::GRAY . "Keine Spieler sichtbar");
+                
+                
 
                 $inv->setItem(2, $all);
 
@@ -50,6 +53,7 @@ class Hider implements Listener {
             } elseif (in_array($name, $this->plugin->none)) {
                 $all = Item::get(351, 10, 1);
                 $all->setCustomName(c::RESET . c::GREEN . "Alle Spieler sichtbar");
+                
 
                 $vip = Item::get(351, 5, 1);
                 $vip->setCustomName(c::RESET . c::DARK_PURPLE . "Nur VIPs sichtbar");
@@ -66,13 +70,15 @@ class Hider implements Listener {
             }else {
                 $all = Item::get(351, 10, 1);
                 $all->setCustomName(c::RESET . c::GREEN . "Alle Spieler sichtbar");
-                $all->addEnchantment(new EnchantmentInstance($estick, 1));
+                $all->addEnchantment(new EnchantmentInstance($estick, 1));                
 
                 $vip = Item::get(351, 5, 1);
                 $vip->setCustomName(c::RESET . c::DARK_PURPLE . "Nur VIPs sichtbar");
 
                 $item = Item::get(351, 8, 1);
                 $item->setCustomName(c::RESET . c::GRAY . "Keine Spieler sichtbar");
+                
+                
 
                 $inv->setItem(2, $all);
 
