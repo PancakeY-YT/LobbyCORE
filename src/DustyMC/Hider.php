@@ -16,6 +16,7 @@ class Hider implements Listener {
      public $vip = [];
      public $none = [];    
      
+     
      public function __Construct(Main $plugin){
      
         $this->plugin = $plugin;
