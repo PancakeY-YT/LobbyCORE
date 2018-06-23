@@ -12,7 +12,7 @@ use pocketmine\Server;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\event\Listener;
+use pocketmine\event\Listeners;
 use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase implements Listener {
@@ -49,6 +49,7 @@ class Main extends PluginBase implements Listener {
         	$player->getInventory()->setItem(4, Item::get(345)->setCustomName(TextFormat::YELLOW."Navigator"));
         	$player->getInventory()->setItem(8, Item::get(399)->setCustomName(TextFormat::GREEN."Lobbys"));
             $player->getInventory()->setItem(0, Item::get(397 , 3)->setCustomName(TextFormat::AQUA."Dein Profil"));
+            $player->getInventory()->setItem(1, Item::get(397 , 3)->setCustomName(TextFormat::GOLD."Spieler Sichtbar"));
 
        }
     	
@@ -66,6 +67,10 @@ class Main extends PluginBase implements Listener {
             		$menu = new Lobbys($this);
              		$menu->Lobbys($player);
              
+                 }
+                 
+             if($item->getCustomName() == TextFormat::GOLD . "Spieler Sichtbar") {
+                 	
                  }
                  
            if($item->getCustomName() == TextFormat::AQUA . "Dein Profil") {
