@@ -1,2 +1,2 @@
 # LobbyCore
-LobbyCore Called Java LobbyCore
+LobbyCore for PythonHCF
